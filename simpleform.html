@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tạo form cơ bản</title>
+    <style>
+        .wufoo {
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+    </style
 </head>
-<body>
+<body style="margin-left:50px">
+<form method="get" action="simpleform.html" class = "wufoo">
+    <h2 style="color:blue">Order Form</h2>
+    <p>What would you like to buy?</p>
+    <select>
+        <option value = "  ">A</option>
+        <option>B (+  0.5$)</option>
+        <option>C (+  0.5$)</option>
+    </select>
+
+    <p>How many would you like to order?</p>
+    <input type="radio" name="rd" id="quantity-1"/>
+    <label for="quantity-1"> 1 - $10 </label> <br>
+    <input type="radio" name="rd" id="quantity-2"/>
+    <label for="quantity-2"> 2 - $10 </label> <br>
+    <input type="radio" name="rd" id="quantity-3"/>
+    <label for="quantity-3"> 3 - $25 </label> <br>
+
+
+    <p>Name <span style="color: red">*</span> </p>
+    <input type = "text" name="firstname" placeholder="FirstName" size="15"/>
+    <input type = "text" name="lastname" placeholder="LastName" size="15"/>
+    <p>Email</p>
+    <input type = "text" name="email" size="35"/>
+    <p>Phone Number</p>
+    <input type = "text" name="phone1" size="5"/> -
+    <input type = "text" name="phone2" size="5"/> -
+    <input type = "text" name="phone3" size="5"/>
+
+    <br><br>
+    <input type = "button" name="btSubmit" value="Submit" style="font-size:110%"/>
+</form>
 
 </body>
 </html>
